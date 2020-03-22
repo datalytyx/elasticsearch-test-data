@@ -1,0 +1,14 @@
+curl --user elastic:changeme -X DELETE "localhost:9200/myneed?pretty"
+
+
+
+
+
+
+
+
+
+
+
+
+python es_test_data.py --es_url=http://localhost:9200 --index_name=myneed --dict_file=./words_small.txt --username=elastic --password=changeme --count=100 --force_init_index=True --format="guid:int:0:9999999999,need_type:text:ventilator-mask-wipes-driver-admin-other:1:1,need_quantity:int:1:1000,size:text:small-medium-large:1:1,need_title:dict:5:50,need_description:30:500,need_timestamp:ts,need_organisation:text:ChepstowCommunityHospital-CountyHospital-GrangeUniversityHospital-LlanfrechfaGrangeHospital-MaindiffCourtHospital-NevillHallHospital-RoyalGwentHospital:1:1"
